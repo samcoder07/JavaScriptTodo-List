@@ -1,72 +1,70 @@
 *{
-    margin: 0;
     padding: 0;
-    font-family: "poppins",sans-serif;
-    box-shadow: border-box;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: cursive sans-serif !important;
 }
-
 body{
-    background: #78c1f3;
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    height:100vh;
+    background-image: url("https://media.istockphoto.com/id/1160569491/es/foto/reloj-de-bolsillo-viejo-sobre-fondo-oscuro.jpg?s=612x612&w=0&k=20&c=yxUhPV5XJG9zRGQZlzHckDehHED75HZEZY2q1TTqF-E=");
+    background-repeat: no-repeat;
+    background-size:cover;
+    overflow: hidden;
 }
-
-.container{
-    background: #fff;
-    padding: 25px;
-    width: 500px;
-    border-radius: 10px;    
-}
-
-.todo-header{
-    display: flex;
-    align-items: center;
-    margin-bottom: 20px;
-    padding-left: 50px;
-    justify-content: center;
-}
-
-.todo-body{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background: #edeef0;
-    border-radius: 30px;
-    margin-bottom: 20px;
-}
-
-.todo-body img{
-    cursor: pointer;
-    height: 55px;
-    width: 55px;
-    padding: 10px;
-    background: limegreen;
-    border-radius: 40px;
-}
-
-
-.todo-body input{
-    border: none;
-    outline: none;
-    background: transparent;
-    padding: 15px 27px;
-    font-size: 20px;
-}
-
-ul li{
-    list-style: none;
-    font-size: 18px;
-    cursor: pointer;
-    padding: 10px;
-}
-
-li{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background: #edeef0;
-    margin-bottom: 10px;
+#main-header{
     border-radius: 5px;
+}
+#header-title{
+    font-size: 3rem;
+    font-weight: 700;
+    text-shadow: 2px 2px 2px #030202;
+}
+.container{
+    width:50%;
+    margin-top: 7em;
+}
+@media screen and (max-width: 800px) {
+    .container{
+        width:70%;
+    }
+  }
+@media screen and (max-width: 650px) {
+    .container{
+        width:80%;
+    }
+  }
+@media screen and (max-width: 500px) {
+    .container{
+        width:99%;
+        margin-top: 5em;
+    }
+  }
+
+.item{
+    display: flex;
+    flex-direction: row;
+    padding: 1rem ;
+    border-bottom:4px solid rgb(249, 230, 146) ;
+}
+
+.content{
+    display:1 1 0%;
+    width:90%;
+}
+.item .content .text {
+	font-size: 1.125rem;
+	width: 100%;
+    border-color: transparent;
+}
+.item .content .text:hover {
+    cursor:context-menu;
+}
+.item .actions {
+	display: flex;
+}
+.item .actions button {
+	margin-left: 0.5rem;
+	font-weight: 700;
+    font-size:0.9rem;
+    padding:2px 6px;
 }
